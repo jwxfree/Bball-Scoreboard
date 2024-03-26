@@ -8,64 +8,91 @@ body{
 }
 
 .home{
+    max-width: 600px;
+    margin: 2.5% 5% 0 0 ;
+    border: 5px solid white;
+    border-radius: 20px;
+    padding: 5%;
+    background: transparent;
+    backdrop-filter: blur(8px); 
     display: inline-block;
     font-weight: 900;
-    margin: 5%;
-    background: transparent;
-    backdrop-filter: blur(20px);
-    margin-top: 20vh;
-
-    border: 5px solid rgb(255, 255, 255);
-    border-radius: 20px;
-
-    height: 60%;
-    width: 20%;
 }
 .away{
+    max-width: 600px;
+    margin: 0 0 0 8% ;
+    border: 5px solid white;
+    border-radius: 20px;
+    padding: 5%;
+    background: transparent;
+    backdrop-filter: blur(8px); 
     display: inline-block;
     font-weight: 900;
-    margin: 5%;
-    background: transparent;
-    backdrop-filter: blur(20px);
-    margin-top: 20vh;
-
-    border: 5px solid rgb(255, 255, 255);
-    border-radius: 20px;
-
-    height: 60%;
-    width: 20%;
 }
+
+    
 
 .pointbtn{
     border: none;
     border-radius: 20px;
     background-color: rgb(202, 0, 0);
     color: white;
-    padding: 4%;
-    width: 7vw;
+    padding: 5.5%;
+
     font-weight: 600;
-    margin: 5vh 0 0 6.5vw;
+    margin: 15% 0 0 0;
     display: flex;
     justify-content: center;
+    text-align: center;
+    height: 4vh;
+    width: 8vw;
+    
  
 }
-
-button:hover{
-    background-color: darkred;
-}
-#pauseButton{
-    position: absolute;
-    inset: 1em 1em 1em 1em;
+.resetbtn{
     border: none;
     border-radius: 20px;
     background-color: rgb(202, 0, 0);
     color: white;
-    padding: 1em;
-    width: 8vw;
     height: 4vh;
+    width: 8vw;
+    margin: .5vw;
 
 }
+.audiobtn{
 
-#pauseButton:hover{
-    background-color: rgb(109, 5, 5);
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(202, 0, 0);
+    color: white;
+    height: 4vh;
+    width: 8vw;
+    margin: .5vw;
 }
+
+.utilityBtn{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    width: 5vw;
+}
+
+@media (max-width: 768px) {
+    .pointbtn, .resetbtn{
+        width: 30%;
+    }
+}
+
+@media (max-width: 576px) {
+    .pointbtn, .resetbtn{
+        width: 40%;
+    }
+}
+button:hover{
+    background-color: darkred;
+}
+#home-currentpts, #away-currentpts{
+    font-size: 9rem;
+}
+

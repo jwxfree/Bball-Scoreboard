@@ -36,3 +36,16 @@ function awayremove(){
     awayCurrentPts.textContent = awaypoint
 }
 
+function reset(){
+    homeCurrentPts.textContent = 0
+    awayCurrentPts.textContent = 0
+}
+
+
+let audio = document.getElementById('audio-player')
+function pause(){
+    audio.pause()
+}
+function resume(){
+    audio.play()
+}
