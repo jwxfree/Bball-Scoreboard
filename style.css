@@ -1,0 +1,71 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url(https://manybackgrounds.com/images/hd/minimalist-basketball-hoop-bkl8p4pq6k421qp1.webp);
+    background-size: cover;
+    color: white;
+    
+}
+
+.home{
+    display: inline-block;
+    font-weight: 900;
+    margin: 5%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    margin-top: 20vh;
+
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 20px;
+
+    height: 60%;
+    width: 20%;
+}
+.away{
+    display: inline-block;
+    font-weight: 900;
+    margin: 5%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    margin-top: 20vh;
+
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 20px;
+
+    height: 60%;
+    width: 20%;
+}
+
+.pointbtn{
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(202, 0, 0);
+    color: white;
+    padding: 4%;
+    width: 7vw;
+    font-weight: 600;
+    margin: 5vh 0 0 6.5vw;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+button:hover{
+    background-color: darkred;
+}
+#pauseButton{
+    position: absolute;
+    inset: 1em 1em 1em 1em;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(202, 0, 0);
+    color: white;
+    padding: 1em;
+    width: 8vw;
+    height: 4vh;
+
+}
+
+#pauseButton:hover{
+    background-color: rgb(109, 5, 5);
+}

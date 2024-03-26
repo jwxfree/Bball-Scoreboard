@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home">
+        <h1 style="font-size: 3em;">HOME</h1>
+        <h1 id="home-currentpts">0</h1>
+        <button class="pointbtn" onclick="homeAdd3Pts()" id="home-3pts">3PTS</button>
+        <button class="pointbtn" onclick="homeAdd2Pts()" id="home-2pts">2PTS</button>
+        <button class="pointbtn" onclick="homeAdd1Pts()" id="home-1pts">1PT</button>
+        <button class="pointbtn" onclick="homeremove()" id="home-removepts">REMOVE POINT</button>
+    </div>
+    <div class="away">
+        <h1 style="font-size: 3em;">AWAY</h1>
+        <h1 id="away-currentpts">0</h1>
+        <button class="pointbtn" onclick="awayAdd3Pts()" id="away-3pts">3PTS</button>
+        <button class="pointbtn" onclick="awayAdd2Pts()" id="away-2pts">2PTS</button>
+        <button class="pointbtn" onclick="awayAdd1Pts()" id="away-1pts">1PT</button>
+        <button class="pointbtn" onclick="awayremove()" id="away-removepts">REMOVE POINT</button>
+
+    </div>
+    <iframe id="youtube-player" width="0" height="0" src="https://www.youtube.com/embed/KwoVHYSIulI?si=-YFIxIqKXiKMtbxI&amp;controls=0&amp;autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <script src="script.js"></script>
+</body>
+</html>
